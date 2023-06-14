@@ -1,0 +1,61 @@
+Type Orm - Comandos (CMD) - 
+
+yarn init -y  // No package.json olhar o " Main" para trocar rota do projeto
+
+yarn add <nome da biblioteca> ex: typeorm , typescript , reflect-metadata --> importa
+criar pastar----> Src -> app.ts
+
+yarn add @types/node --dev
+
+instalar o banco de dados 
+
+ex: yarn add pg
+
+tsc --init 
+
+
+
+yarn remove <nome>
+
+
+
+
+#QUICK START
+
+yarn express
+
+Dicas * Quando for trtar com projetos typescript sempre instalar dependenciasDev (bibliotecas de tipos)
+
+yarn add ts-node ts-node-dev --dev // adicionar tipos de bibliotecas do node.
+
+Adicionar  e alterar Scripts no package.json
+
+
+
+* ARQUITETURA ORIENTADA A DOMINIO
+
+criação de pasta no Config
+
+Config -> database -> typeorm / data-Source.ts
+
+estruturação
+
+dtos = pasta responsavel para o objeto  de transferencia de dados
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
