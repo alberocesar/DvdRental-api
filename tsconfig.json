@@ -6,6 +6,8 @@
     "outDir": "./dist",
     "paths": {
       "@config/*": ["config/*"],
+      "@modules/*": ["modules/*"],
+      "@shared/*": ["shared/*"],
     },
     "allowSyntheticDefaultImports": true,
     "esModuleInterop": true,
