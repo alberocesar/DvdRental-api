@@ -2,6 +2,11 @@
   "compilerOptions": {
     "target": "es2016",
     "module": "commonjs",
+    "baseUrl": "./src",
+    "outDir": "./dist",
+    "paths": {
+      "@config/*": ["config/*"],
+    },
     "allowSyntheticDefaultImports": true,
     "esModuleInterop": true,
     "forceConsistentCasingInFileNames": true,

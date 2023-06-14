@@ -3,29 +3,41 @@ import { Entity, Column, PrimaryGeneratedColumn } from "typeorm";
 @Entity()
 export class Filme {
     @PrimaryGeneratedColumn()
-    id: number;
+    film_id: number;
 
-    @Column({ length: 100 })
+    @Column()
     title: string;
 
-    @Column("text")
+    @Column()
     description: string;
 
-    @Column("int")
-    year: number;
+    @Column()
+    release_year: number;
 
-    @Column("int")
+    @Column()
+    language_id: number;
+
+    @Column()
+    rental_duration: number;
+
+    @Column()
+    rental_rate: number;
+
+    @Column()
     length: number;
 
-    @Column("int")
-    rating: number;
+    @Column()
+    replacement_cost: number;
 
-    @Column("int")
-    votes: number;
+    @Column()
+    rating: string;
 
-    @Column("int")
-    revenue: number;
+    @Column()
+    last_update: Date;
 
-    @Column("int")
-    metascore: number;
+    @Column()
+    special_features: string;
+
+    @Column()
+    fulltext: string;
 }
