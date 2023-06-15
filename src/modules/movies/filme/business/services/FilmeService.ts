@@ -1,8 +1,9 @@
-import { Filme } from "../../database/entities/filme.entity";
+import Filme, { CreateFilmeDTO, UpdateFilmeDTO } from "../../dtos/FIlmeDTO";
+
 import { IFilmeRepository } from "../../database/repositories/IFilmeRepository";
 
-import { CreateFilmeDTO } from "../../dtos/CreateFilmeDTO";
-import { UpdateFilmeDTO } from "../../dtos/UpdateFilmeDTO";
+
+
 import { IFilmeService } from "./IFilmeService";
 
 export class FilmeService implements IFilmeService {

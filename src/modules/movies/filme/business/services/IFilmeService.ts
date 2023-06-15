@@ -1,7 +1,5 @@
-import { Filme } from "../../database/entities/filme.entity";
+import Filme, { CreateFilmeDTO, UpdateFilmeDTO } from "../../dtos/FIlmeDTO";
 
-import { CreateFilmeDTO } from "../../dtos/CreateFilmeDTO";
-import { UpdateFilmeDTO } from "../../dtos/UpdateFilmeDTO";
 
 export interface IFilmeService {
     getFilmes(): Promise<Filme[]>;

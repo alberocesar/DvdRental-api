@@ -1,7 +1,6 @@
 import { Request, Response } from 'express';
 
-import { CreateFilmeDTO } from '../../dtos/CreateFilmeDTO';
-import { UpdateFilmeDTO } from '../../dtos/UpdateFilmeDTO';
+import { CreateFilmeDTO, UpdateFilmeDTO } from "../../dtos/FIlmeDTO";
 
 import { IFilmeService } from '../../business/services/IFilmeService';
 import { IFilmeController } from './IFilmeController';

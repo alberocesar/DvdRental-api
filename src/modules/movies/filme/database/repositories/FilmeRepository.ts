@@ -1,10 +1,9 @@
 import { Repository } from "typeorm";
 
-import { Filme } from "../entities/filme.entity";
+
 import { IFilmeRepository } from "./IFilmeRepository";
 
-import { CreateFilmeDTO } from "../../dtos/CreateFilmeDTO";
-import { UpdateFilmeDTO } from "../../dtos/UpdateFilmeDTO";
+import Filme, { CreateFilmeDTO, UpdateFilmeDTO } from "../../dtos/FIlmeDTO";
 
 import dataSource from "@config/database/typeorm/data-Source";
 
@@ -19,8 +18,8 @@ export class FilmeRepository implements IFilmeRepository {
         return await this.typeormRepository.find();
     }
 
-    async getFilmeById(film_id: number): Promise<Filme> {
-        return await this.typeormRepository.findOneBy({ film_id });
+    async getFilmeById(filmId: number): Promise<Filme> {
+        return await this.typeormRepository.findOneBy({ filmId });
     }
 
     async createFilme(filme: CreateFilmeDTO): Promise<Filme> {

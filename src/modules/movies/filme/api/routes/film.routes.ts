@@ -10,9 +10,9 @@ const filmeService = new FilmeService(filmeRepository);
 const filmeController = new FilmeController(filmeService);
 
 router.get('/', (req, res) => filmeController.getFilmes(req, res));
-router.get('/:film_id', (req, res) => filmeController.getFilmeById(req, res));
+router.get('/:id', (req, res) => filmeController.getFilmeById(req, res));
 router.post('/', (req, res) => filmeController.createFilme(req, res));
-router.put('/:film_id', (req, res) => filmeController.updateFilme(req, res));
-router.delete('/:film_id', (req, res) => filmeController.deleteFilme(req, res));
+router.put('/:id', (req, res) => filmeController.updateFilme(req, res));
+router.delete('/:id', (req, res) => filmeController.deleteFilme(req, res));
 
 export default router;
